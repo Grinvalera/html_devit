@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/*
+
+Basic 
+
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none; /*Убрать все подчеркивания на ссылках*/
+}
+
+body {
+	padding: 0; /*Устанавливаем отступы*/
+	margin: 0; /*Устанавливем расстояние между блоками*/
+	font-family: 'Open Sans', sans-serif; /*Делаем на всей страницы шрифт*/
+	max-width: 100%; /*Устанавливаем максимальную ширину элемента*/
+}
+
+/*
+
+Header section
+
+*/
+
+header {
+	width: 100%; /*Ставим ширину 100%*/
+	height: 100px; /*Ставим высоту в 100 пикселей*/
+	background: #a5e1f3; /*Заливаем задний фон цветом */
+}
+
+.header-container{
+	padding-left: 96px; /*Делаем отступ слева*/
+	padding-right: 41px; /*Делаем отступ справа*/
+	height: 100%; /*Ставим высоту 100%*/
+	display: flex; /*Растягиваем на всю ширину блока*/
+}
+
+.header-logo {
+	display: flex; /*Растягиваем на всю ширину блока*/
+	height: 100%; /*Ставим высоту 100%*/
+	align-items: center; /*Центрируем*/
+}
+
+.header-links {
+	display: flex; /*Растягиваем на всю ширину блока*/
+	align-items: center; /*Ставим высоту 100%*/
+	margin-left: 117px; /*Делаем отступ*/
+}
+
+.header-links ul {
+	padding: 0; /*Не ставим отступ*/
+	display: flex; /*Растягиваем на всю ширину блока*/
+	list-style: none; /*Убираем точки на ul блоке*/
+}
+
+.header-links li {
+	margin-left: 50px; /*Делаем отступы между элементами*/
+	cursor: pointer; /*Делаем курсор обозначающий ссылку*/
+	font-size: 17px; /*Ставим размер шрифта*/
+}
+
+.header-links li:first-child {
+	margin-left: 0; /*Отсуп у первого элента 0*/
+}
+
+.header-links li > a {
+	color: black; /*У наследовательного класса "а" делаем цвет текста черным*/
+}
+
+.header-button {
+	display: flex; /*Растягиваем на всю ширину блока*/
+	align-items: center; /*Центрируем*/
+	margin-left: 800px; /*Отступ слева 800рх*/
+}
+
+.header-button a {
+	padding: 15px 22px; /*Делаем отсупы*/
+	background: #d92727; /*Ставим красный цвет на задний фон*/
+	color: #fff; /*Текст белый*/
+	border-radius: 5px; /*Делаем кнопку закругленной*/
+}
+
+
+/*
+
+Form section
+
+*/
+
+.section-form {
+	position: relative; /*Выставляем позицию относительно его исходного места*/
+	width: 100%; /*Ставим ширину 100%*/
+	height: 993px; /*Высота 993рх*/
+	display: flex; /*Растягиваем на всю ширину блока*/
+	justify-content: center; /*Центрируем*/
+	margin-top: 54px; /*Отступ сверху*/
+	margin-bottom: 168px; /*Отступ снизу*/
+}
+
+.form-block {
+	display: flex; /*Растягиваем на всю ширину блока*/
+	width: 533px; /*Высота 533рх*/
+	background: #fff; /*Цвет белый*/
+	box-shadow: 0 0 10px rgba(0,0,0,0.5); /*Делаем тени*/
+}
+
+.form-container	{
+	display: flex; /*Растягиваем на всю ширину блока*/
+	width: 100%; /*Ширина 100%*/
+	height: 100%; /*Высота 100%*/
+	margin: 30px 35px; /*Отступы сверху и снизу*/
+}
+
+.form-container form {
+	width: 100%; /*Ширина 100%*/
+	height: 100%; /*Высота 100%*/
+}
+
+.form-controller:first-child {
+	margin: 0; /*Отступ у первого элента 0*/
+}
+
+.form-controller {
+	width: 100%; /*Ширина 100%*/
+	margin-top: 16px; /*Отступ между элементами сверху*/
+}
+
+.form-controller label {
+	display: block; /*Блочный элемент*/
+	font-size: 16px; /*Размер шрифта*/
+	color: #666666; /*Цвет текста*/
+	margin-bottom: 10px; /*Отступ снизу*/
+}
+
+.input-controller {
+	width: 471px; /*Ширина*/
+	height: 41px; /*Высота*/
+	border-radius: 2px; /*Загругление*/
+	border: 1px solid #b7b7b7; /*Рамка*/
+}
+
+.input-controller:focus {
+	outline: none;
+}
+
+.input-group {
+	display: flex; /*Растягиваем на всю ширину блока*/
+	width: 100%; /*Ширина*/
+}
+
+.input-group:last-child {
+	margin-top: 16px; /*Отступ снизу последнего элемента родительского класса*/
+}
+
+.input-group input:first-child {
+	width: 346px !important; /*Присваиваем приоритеты*/
+}
+
+.input-group input:last-child {
+	width: 109px; /*Ширина последнего элемента родительского класса*/
+	margin-left: 18px; /*Отступ слева последнего элемента родительского класса*/
+}
+
+.form-button {
+	display: flex; /*Растягиваем на всю ширину блока*/
+}
+
+.form-button a{
+	padding: 10px 22px; /*Отступы*/
+	background: #d92727; /*Задний цвет*/
+	color: #fff; /*Цвет шрифта*/
+	border-radius: 2px; /*Закругление*/
+	margin-left: 18px; /*Отступы слева*/
+}
+
+.upload-image {
+	position: relative; /*Выставляем позицию относительно его исходного места*/
+	width: 471px; /*Ширина*/
+	height: 130px; /*Высота*/
+	border: 1px solid #b7b7b7; /*Рамка*/
+	cursor: pointer; /*Делаем курсор обозначающий ссылку*/
+}
+
+.upload-image input {
+	width: 100%; /*Ширина*/
+	height: 100%; /*Высота*/
+	border: none; /*Убираем рамку*/
+}
+
+.upload-image img {
+	position: absolute; /*Позиция абсолют*/
+	right: 200px; /*Выравниваем справа*/
+	top: 30px; /*Выравниваем сверху*/
+}
+
+
+/*
+
+footer section
+
+*/
+
+
+footer {
+	width: 100%; /*Делаем ширину футера*/
+	height: 346px; /*Делаем высоту футера*/
+	background: #a9dff2; /*Заливем задний фон*/
+}
+
+footer a{
+	color: black; /*Привсваеваем всем элементам "а" цвет черный*/
+}
+
+footer hr{
+	font-size: 2px; /*Размер линии*/
+	color: white; /*Цвет белый*/
+}
+
+.footer-about {
+	display: flex; /*Растягиваем на всю ширину блока*/
+	padding-left: 115px; /*Отступ слева*/
+	padding-right: 200px; /*Отступ справа*/
+	justify-content: space-between; /*Растягиваем все элементы на весь блок*/
+}
+
+.footer-about p{
+	font-size: 17px /*Размер тега "р"*/
+}
+
+.footer-about li {
+	line-height: 30px; /*Отступы между элементами*/
+}
+
+.footer-about ul {
+	font-size: 14px; /*Размер шрифта*/
+	padding: 0; /*Отступ 0*/
+	list-style: none; /*Убираем подчеркивание*/
+	color: black; /*Цвет текста черный*/
+	line-height: 30px; /*Отступы между элементами*/
+}
+
+.footer-img{
+	display: flex; /*Растягиваем на всю ширину блока*/ 
+}
+
+.footer-down{
+	font-size: 14px; /*Размер текста*/
+	text-align: right; /*Расположение справа*/
+	margin-right: 200px; /*Отступ справа*/
+	line-height: 60px; /*Отступы между элементами*/
+	padding: 10px; ./*Отсуп сверху*/
+}
+
+.footer-link{
+	display: inline-block; /*Расположение элементов в строку*/
+	margin: 0 15px; /*Отсупы*/
+}

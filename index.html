@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="src/css/style.css">
+	<title>Document</title>
+</head>
+<body>
+	<header>
+		<div class="header-container">
+			<div class="header-logo">
+				<img src="src/images/logo.png">
+			</div>
+			<div class="header-links">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Courses</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Video</a></li>
+					<li><a href="#">Interesting</a></li>
+				</ul>
+			</div>
+			<div class="header-button">
+				<a href="#">Authorization</a>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="section-form">
+			<div class="form-block">
+				<div class="form-container">
+					<form action="#" method="POST">
+						<div class="form-controller">
+							<label for="full-name">ФИО</label>
+							<input id="full-name" class="input-controller" type="text" required>
+						</div>
+						<div class="form-controller">
+							<label for="email">E-mail</label>
+							<input id="email" class="input-controller" type="email" required>
+						</div>
+						<div class="form-controller">
+							<label for="phone">Телефон</label>
+							<div class="input-group">
+							    <input id="phone" class="input-controller" type="phone" required>
+                                <input id="phone-code" class="input-controller" placeholder="+">
+							</div>
+							<div class="input-group">
+							    <input id="phone" class="input-controller" type="phone" required>
+                                <div class="form-button">
+                                	<a href="">Удалить</a>
+                                </div>
+							</div>
+						</div>
+                        <div class="form-controller">
+							<label for="full-name">Возраст</label>
+							<input id="age" class="input-controller" type="text" required>
+						</div>
+						<div class="form-controller" style="">
+							<label for="full-name">Фотография</label>
+							<div class="upload-image">
+							    <input id="age" class="input-controller" type="text" required>
+							    <img src="src/images/image.png" alt="">
+							</div>
+						</div>
+						<div class="form-controller">
+							<label for="full-name">Резюме</label>
+							<textarea name="" id="" cols="30" rows="10" class="input-controller" style="resize: none; height: 274px;"></textarea>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="footer-container">
+			<div class="header-links">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Courses</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Video</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+			</div>
+			<hr>
+			<div class="footer-about">
+				<ul>
+					<p>Courses</p>
+					<li><a href="#">Project management</a></li>
+					<li><a href="#">Android development</a></li>
+					<li><a href="#">Online marketing</a></li>
+					<li><a href="#">Front-end developer</a></li>					
+				</ul>
+				<ul>
+					<p>Interesting</p>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Youtube</a></li>
+					<li><a href="#">Team</a></li>
+					<li><a href="#">Community</a></li>					
+				</ul>
+				<ul>
+					<p>Social networks</p>
+					<ul class="footer-img">
+						<li><a href="#"><img src="src/images/4.png"></a></li>
+						<li><a href="#"><img src="src/images/2.png"></a></li>
+						<li><a href="#"><img src="src/images/3.png"></a></li>
+						<li><a href="#"><img src="src/images/1.png"></a></li>
+					</ul>
+				</ul>
+			</div>
+		</div>
+		<hr>
+		<div class="footer-down">
+			<a class="footer-link" href="#">Terms of Service</a>
+			<a class="footer-link" href="#">Privacy policy</a>
+		</div>
+	</footer>
+</body>
+</html>
